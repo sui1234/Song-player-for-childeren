@@ -38,5 +38,16 @@ public class MusicActivity extends AppCompatActivity {
             }
         });
 
+        ImageView imageView3 = findViewById(R.id.bath);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(MusicActivity.this, FullScreenActivity.class);
+
+                intent3.putExtra("key", "video3");
+                startActivity(intent3);
+            }
+        });
+
     }
 }
